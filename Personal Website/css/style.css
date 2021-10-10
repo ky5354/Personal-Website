@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 8%;
+    cursor: pointer;
+}
+
+
+.homeRow{
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+
+.homeCol{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.portrait{
+    max-width: 30%;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+
+.navbar nav{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.navbar nav ul li button{
+    background-color: rgb(95, 95, 95);
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.navbar nav ul li button:hover{
+    opacity: 1;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.homeCol h1{
+    color: white;
+    font-size: 50px;
+}
+
+.homeCol h2{
+    color: white;
+    font-size: 30px;
+}
+
+.aboutRow{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #171717;
+}
+
+.aboutCol{
+    flex-basis: 60%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+.vertical-me{
+    max-height: 100%;
+    border: 5px solid black;
+}
+
+.aboutCol2{
+    flex-basis: 90%;
+    text-align: left;
+    margin-top: 80px;
+    display: inline-block;
+}
+
+.aboutCol2 h1{
+    color: white;
+    font-size: 40px;
+}
+
+.aboutCol2 p{
+    color: #fff;
+}
+
+.aboutCol2 a:link, a:visited{
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.aboutCol2 a:hover, a:active {
+    background-color: black;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    height: 25%;
+    background-image: url(images/footer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footerBar{
+    display: inline;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.footerBar nav{
+    flex: 1;
+    text-align: center;
+}
+
+.footerBar nav h1{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.footerBar nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 60px;
+}
+
+.footerBar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+} 
+
+.footerBar nav ul li h4{
+    color: white;
+    font-size: 20px;
+}
+
+.footerBar h5{
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+}
