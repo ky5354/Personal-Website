@@ -4,6 +4,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -21,30 +36,6 @@
     box-sizing: border-box;
 }
 
-.logo{
-    width: 8%;
-    cursor: pointer;
-}
-
-
-.homeRow{
-    display: flex;
-    height: 90%;
-    align-items: center;
-}
-
-.homeCol{
-    flex-basis: 100%;
-    text-align: center;
-}
-
-.portrait{
-    max-width: 30%;
-    border-radius: 50%;
-    border: 5px solid black;
-}
-
-
 .navbar nav{
     flex: 1;
     text-align: right;
@@ -61,7 +52,7 @@
     border: none;
     padding: 16px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 5px;
     margin: 4px 2px;
     opacity: 0.6;
     transition: 0.4s;
@@ -73,9 +64,26 @@
 }
 
 .navbar nav ul li a {
+    white-space: nowrap;
     text-decoration: none;
     color: #fff;
     font-size: 15px;
+}
+
+.logo{
+    width: 8%;
+    cursor: pointer;
+}
+
+.homeRow{
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+
+.homeCol{
+    flex-basis: 100%;
+    text-align: center;
 }
 
 .homeCol h1{
@@ -88,43 +96,46 @@
     font-size: 30px;
 }
 
-.aboutRow{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: #171717;
-}
-
-.aboutCol{
-    flex-basis: 60%;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 70px;
-    margin-bottom: 50px;
-}
-
-.vertical-me{
-    max-height: 100%;
-    border: 5px solid black;
-}
-
-.aboutCol2{
-    flex-basis: 90%;
-    text-align: left;
-    margin-top: 80px;
-    display: inline-block;
-}
-
-.aboutCol2 h1{
-    color: white;
-    font-size: 40px;
-}
-
-.aboutCol2 p{
+.homeCol p{
     color: #fff;
 }
 
-.aboutCol2 a:link, a:visited{
+.homeCol a{
+    color: white;
+}
+
+.homeCol a img{
+    max-width: 30%;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.homeCol a img:hover{
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    transition: 1s;
+}
+
+.aboutRow{
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+
+.aboutCol{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.aboutCol p{
+    color: white;
+}
+
+.aboutCol h1{
+    color: white;
+}
+
+.aboutCol a:link, a:visited{
     background-color: white;
     color: black;
     padding: 15px 30px;
@@ -134,15 +145,15 @@
     transition: 0.5s;
 }
 
-.aboutCol2 a:hover, a:active {
+.aboutCol a:hover, a:active {
     background-color: black;
     color: white;
 }
 
 .footer{
     width: 100%;
-    height: 25%;
-    background-image: url(images/footer.jpg);
+    height: 20%;
+    background-color: #171717;
     background-position: center;
     background-size: cover;
 }
